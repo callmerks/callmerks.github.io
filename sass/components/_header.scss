@@ -1,13 +1,11 @@
 .header{
-	background: linear-gradient(to right bottom, 
-	rgba($color-main, 0.8), 
-	rgba($color-dark, 0.8)),
-	url("../images/header-img.jpg");
+	background: #24e8a7
+	url("../images/background.jpg") no-repeat 50%/cover;
 	height: 95vh;
-	background-size: cover;
 	background-position: top;
 	position: relative;
 	color: $color-white;
+	padding: $padding-lg;
 
     animation: moveInDown .5s ease-out;
 	clip-path: polygon(0% 0%, 100% 0, 100% 75vh, 0 100%);
@@ -16,10 +14,61 @@
     animation: moveInRight 1.5s ease-out;
     color: $color-white;
     font-size: 2rem;
-    font-family: 'Satisfy', cursive;
 	}
 
 	&__ul{
 	animation: moveInLeft 1.5s ease-out;
+	}
+}
+
+.image{
+	position: relative;
+	width: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+    
+    @mixin filterImage{
+    position: absolute;
+    filter: opacity(.1) drop-shadow(0 0 0 #24e8a7);
+    width: 50%;
+    box-shadow: 0 1.5rem 4rem rgba(black, 0.4);
+    transition: all .2s;
+    outline-offset: 2rem;
+    &:hover{
+    outline: 1.5rem solid $color-dark;
+    transform: scale(1.05);
+    }
+    }
+	&__number1{
+    left: 12.5%;
+    @include filterImage;
+	}
+	&__number2{
+	right: 12.5%;
+	@include filterImage;
+	}
+	&__number3{
+	left: 0%;
+	top: 10rem;
+	@include filterImage;
+	}
+	&__number4{
+	left: 50%;
+	transform: translateX(-50%);
+	top: 10rem;
+	@include filterImage;
+	}
+	&__number5{
+	right: 0%;
+	top: 10rem;
+	@include filterImage;
+	}
+	}
+
+@media (max-width: 768px){
+	.image{
+	width: 100%;
+    &__number1{
+    }
 	}
 }

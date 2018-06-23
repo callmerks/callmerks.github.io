@@ -1,0 +1,17 @@
+.btn-white{
+	&__sm{
+	&:link,
+	&:visited{
+	background: $color-white;
+	text-decoration: none;
+	padding: .3rem 1rem .5rem;
+	border-radius: 3rem;
+	color: $color-dark;
+	}
+    &:hover{
+    cursor: pointer;
+    background: #24e8a7 url("../images/background.jpg") no-repeat 50%/cover;
+    color: $color-white;
+    }
+	}
+}
