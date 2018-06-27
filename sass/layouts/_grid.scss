@@ -40,3 +40,15 @@
  
 }
 
+
+@include device(ipad){
+	.row{
+	[class^="grid-"]{
+	width: 100%!important;
+
+	&:not( :last-child){
+	margin-right: 0;
+	}
+}
+}   
+}

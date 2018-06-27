@@ -11,28 +11,41 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		
+		<!-------------------------NAVIGATION MAIN--------------------------->
+		<div class="navigation">
+			<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+			<label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon"></span>
+			</label>
+
+			<div class="navigation__background"></div>
+
+				<nav class="navigation__nav text-cinzel">
+					<ul class="navigation__list">
+						<li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#">About</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#">Experience</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#">Work</a></li>
+						<li class="navigation__item"><a class="navigation__link" href="#">Contact</a></li>
+					</ul>
+				</nav>
+			
+		</div>
 		<!----------------------------------HEADER SECTION--------------------------->
 		<header class="header">
 			<!-------------------------------LOGO SECTION--------------------------------->
 			<div class="row">
 				<div class="grid-12">
-					<div class="header__logo sm-device-text-center margin-bottom-lg">
+					<div class="header__logo margin-bottom-lg">
 						<span class="text-cursive">callme_rks</span>
-						<!-----------------------------------MENU ITEMS SECTION------------------------->
 						
-						<ul class="ul header__ul text-cinzel sm-device-flex-center">
-							<li class="ul__li"><a class="ul__li-a" href="/index.html">About</a></li>
-							<li class="ul__li"><a class="ul__li-a" href="/index.html">Work</a></li>
-							<li class="ul__li"><a class="ul__li-a" href="/index.html">Contact</a></li>
-						</ul>
 					</div>
 					
 					<!-----------------------BACKGROUND IMAGES INSIDE HEADER------------------------------>
 					<div class="header__image">
 						<img class="header__image--number1 opacity" src="images/header-image1.png" alt="rajat sharma" />
 						<img class="header__image--number2 opacity" src="images/header-image2.png" alt="rajat sharma" />
-						<img class="header__image--number3 opacity" src="images/header-image1.png" alt="rajat sharma" />
 					</div>
 					<!---------------------------------HEADER INTRO----------------------------------->
 					<div class="header__heading text-center">
@@ -42,6 +55,7 @@
 				</div>
 			</div>
 		</header>
+
 		<!------(2)-----------------------------INTRO SECTION---------------------------------->
 		<section id="about" class="about section-padding">
 			<div class="margin-bottom-sm text-center">
@@ -49,13 +63,13 @@
 			</div>
 			<div class="row ">
 				<h1 class="margin-bottom-sm text-cinzel">Intro</h1>
-				<div class="grid-6">
+				<div class="grid-6 margin-bottom-lg">
 					<p class="paragraph">Hello, Myself rajat Kumar Sharma. For short, Just call me RKS or RJ. I bring more than 2 years of experience in Web Development industry. I do love my Job and I am passionate about to be a full stack developer. Well, It is not a long way to go because I have a high level of Front end knowledge and I am on my way to be a full stack developer soon. </p>
 					<p class="paragraph">I am always aware of web development industry and the top most front end and backend technologies. I am proud to be a part of this community.</p>
 					<span><a href="#" class="btn__blue--sm" >Learn More &rarr;</a></span>
 					
 				</div>
-				<div class="grid-6">
+				<div class="grid-6 about__composition">
 					<div class="composition">
 						<img class="composition__image composition__image--number1" src="images/header-image1.png" alt="rajat sharma" />
 						<img class="composition__image composition__image--number2" src="images/header-image2.png" alt="rajat sharma" />
@@ -68,7 +82,8 @@
 		<!------(3)-----------------------------Experiences---------------------------------->
 		<section id="about" class="experience section-padding">
 			<div class="text-center margin-bottom-lg">
-				<h1 class="heading__onBlue--main">Experiences</h1>
+				<h1 class="heading__onBlue--main">Experience</h1>
+				<p class="heaidng__onBlue--secondary">hello</p>
 			</div>
 			<div class="row ">
 				<div class="grid-4">
@@ -103,9 +118,10 @@
 		<section id="about" class="projects section-padding">
 			<div class="text-center margin-bottom-lg">
 				<h1 class="heading__onWhite--main">Projects</h1>
+				<p class="heading__onWhite--secondary">hello</p>
 			</div>
-			<div class="row ">
-				<div class="grid-12">
+			<div class="row">
+				<div class="grid-12 margin-bottom-lg">
 					<div class="projects-wrap">
 						<figure class="projects-wrap__fig">
 							<img src="images/header-image1.png">
@@ -143,8 +159,27 @@
 						</figure>
 					</div>
 				</div>
+				<span><a href="#" class="btn__blue--sm">Github</a></span>
 			</div>
 		</section>
+		<footer class="footer section-padding">
+			<div class="footer__logobox">
+				<img src="">
+				<h1>hello</h1>
+			</div>
+			<div class="footer navigation">
+				<nav">
+					<ul class="">
+						<li class=""><a href="#">Home</a></li>
+						<li class=""><a href="#">Home</a></li>
+						<li class=""><a href="#">Home</a></li>
+						<li class=""><a href="#">Home</a></li>
+						<li class=""><a href="#">Home</a></li>
+						<li class=""><a href="#">Home</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
 		
 	</body>
 </html>

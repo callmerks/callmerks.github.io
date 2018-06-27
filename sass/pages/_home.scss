@@ -3,6 +3,9 @@
 }
 .about{
 	margin-top: -10vh;
+	&__composition{
+	height: 30rem;
+	}
 }
 .experience{
 	transform: skewY(-2deg);
@@ -45,6 +48,7 @@
     border-radius: .5rem;
     transition: all .8s;
     transform: scale(.9);
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.6);
 
     }
 
@@ -54,17 +58,18 @@
     position: absolute;
     top: 36%;
     left: 50%;
-    transform: translate(-50%, 20%);
     opacity: 0;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
     transition: all .8s;
     backface-visibility: hidden;
+    transition: all .8s;
     }
 
     &:hover &__caption{
     opacity: 1;
+    transform: translate(-50%, 20%);
     }
 
     &:hover img{
@@ -74,7 +79,28 @@
     transform: scale(1.1);
     filter: blur(1px) brightness(80%);
     }
-
-
 	
+}
+
+.footer{
+	background: $color-black;
+}
+
+
+
+
+@include device(phone){
+	.about {
+    &__composition{
+    height: 23rem;
+    }
+    }
+}
+
+@include device(ipad-pro){
+	.about {
+    .grid-6{
+    width: 100%;
+    }
+    }
 }

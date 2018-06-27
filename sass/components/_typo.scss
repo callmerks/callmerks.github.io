@@ -50,15 +50,3 @@
 .opacity{
 	opacity: .7;
 }
-
-
-// SMALL DEVICES COMMON 
-@media (max-width: 1024px){
-	.sm-device-text-center{
-	text-align: center;
-	}
-	.sm-device-flex-center{
-	display: flex;
-	justify-content: center;
-	}
-}
