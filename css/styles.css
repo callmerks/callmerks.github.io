@@ -99,12 +99,13 @@ body {
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(138, 138, 138, 0.4); }
     .cards__side--front {
-      background: #fff; }
+      background: #fff;
+      color: #8c43ff; }
     .cards__side--back {
       background-image: linear-gradient(to right bottom, #7ed567, #28b485);
-      transform: rotateY(180deg); }
+      transform: rotateY(-180deg); }
   .cards:hover .cards__side--front {
-    transform: rotateY(-180deg); }
+    transform: rotateY(180deg); }
   .cards:hover .cards__side--back {
     transform: rotateY(0); }
 
