@@ -1,15 +1,18 @@
 @import "base/base";
 @import "base/animations";
-@import "base/typo";
 
 @import "abstracts/variables";
 @import "abstracts/functions";
 @import "abstracts/mixins";
 
 @import "components/buttons";
+@import "components/cards";
 @import "components/common";
 @import "components/header";
+@import "components/images";
+@import "components/spacing";
 @import "components/footer";
+@import "components/typo";
 
 @import "layouts/grid";
 

@@ -33,23 +33,10 @@
     .grid-8{
 	width: calc( 2 * ((100% - 2 * #{$gutter-horizontal}) /3) + #{$gutter-horizontal});
     }
+
+    .grid-12{
+    width: 100%;
+    }
  
 }
 
-@media (max-width: 768px){
-.row{
-	.grid-3{
-	width: 100%;
-	}
-	.grid-4{
-	width: 100%;
-	}
-	.grid-6{
-	width: 100%;
-	}
-	.grid-8{
-	width: 100%;
-	margin-top: 3rem;
-	}
-}
-}

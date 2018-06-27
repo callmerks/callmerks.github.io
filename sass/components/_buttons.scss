@@ -1,17 +1,54 @@
-.btn-white{
-	&__sm{
+.btn{
+
+    // MIXIN FOR SMALL BUTTONS
+	@mixin btn-sm{
+    text-decoration: none;
+	padding: 0 1rem;
+	border-radius: 3rem;
+	font-weight: 700;
+	display: inline-block;
+	}
+	// MIXIN ENDS HERE
+    
+    // BUTTON-WHITE-COLOR
+    &__white{
+
+	&--sm{
 	&:link,
 	&:visited{
+	@include btn-sm;
 	background: $color-white;
-	text-decoration: none;
-	padding: .3rem 1rem .5rem;
-	border-radius: 3rem;
-	color: $color-dark;
+	color: $color-black;
 	}
     &:hover{
-    cursor: pointer;
-    background: #24e8a7 url("../images/background.jpg") no-repeat 50%/cover;
+    background: linear-gradient(
+    to right bottom, 
+    rgba($color-main, 0.9), 
+    rgba($color-black, 0.9)),
+	url("../images/header-image1.png") no-repeat 50%/cover;
+	background-attachment: fixed;
+    background-position: center;
     color: $color-white;
     }
 	}
+	}
+	// BUTTON-BLUE-COLOR
+	&__blue{
+	&--sm{
+	&:link,
+	&:visited{
+	@include btn-sm;
+	border-left: 2px solid $color-dark;
+	border-radius: inherit;
+	}
+	&:hover{
+	background: transparent;
+	border-bottom: 2px solid $color-dark;
+	color: $color-dark;
+	border-radius: inherit;
+	transition: all .2s ease;
+	}
+	}
+	}
 }
+

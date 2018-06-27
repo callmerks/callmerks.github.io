@@ -1,0 +1,27 @@
+// MARGIN/ PADDING
+.section-padding{
+	padding: 12rem 2rem 12rem 2rem;
+}
+
+.margin-top-sm{
+	margin-top: 2rem;
+}
+
+.margin-bottom-sm{
+	margin-bottom: 2rem;
+}
+
+.margin-bottom-m{
+	margin-bottom: 4rem;
+}
+
+.margin-bottom-lg{
+	margin-bottom: 8rem;
+}
+
+// PARAGRAPH SPACING
+.paragraph{
+	&:not( :last-child){
+	margin-bottom: 3rem;
+	}
+}

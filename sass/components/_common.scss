@@ -1,3 +1,4 @@
+
 // FLEX BOXES
 .flex{
 	display: flex;
@@ -17,70 +18,9 @@
 	text-decoration: none; 
 	}
 }
-// TEXT-BOXES - TEXT
-.headingOnGreen{
-    position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	&__primary{
-	display: block;
-	}
-	&__sub{
-	display: block;
-	}
-	&__btn{
-	display: block;
-	}
-}
-
-.headingOnWhite{
-	&__primary{
-	font-size: 4rem;
-	text-transform: uppercase;
-	background-image: linear-gradient(to right, 
-	rgba($color-main, 0.8), 
-	rgba($color-dark, 0.8));
-	display: inline-block;
-	-webkit-background-clip: text;
-	color: transparent;
-	}
-	&__sub{
-	display: block;
-	}
-}
-
-.text-center{
-	text-align: center;
-}
-
-.text-cursive{
-	font-family: 'Satisfy', cursive;
-}
-
-.text-cinzel{
-	font-family: 'Cinzel', serif;
-	font-weight: 700;
-}
 
 
-// MARGIN/ PADDING
-.section-padding{
-	padding: 15rem 2rem 2rem 2rem;
-}
 
-.margin-top-sm{
-	margin-top: 2rem;
-}
 
-.margin-bottom-sm{
-	margin-bottom: 2rem;
-}
 
-.margin-bottom-m{
-	margin-bottom: 4rem;
-}
 
-.margin-bottom-lg{
-	margin-bottom: 8rem;
-}

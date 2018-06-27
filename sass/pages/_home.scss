@@ -2,6 +2,79 @@
 	padding: 1rem;
 }
 .about{
-	margin-top: -20vh;
-	background: $color-grey;
+	margin-top: -10vh;
+}
+.experience{
+	transform: skewY(-2deg);
+	margin-top: -3rem;
+	background: linear-gradient(
+    to right bottom, 
+    rgba($color-main, 0.9), 
+    rgba($color-white, 0.9)),
+	url("../images/header-image1.png") no-repeat 50%/cover;
+	background-attachment: fixed;
+    background-position: center;
+    color: $color-white;
+
+    & > * {
+    transform: skewY(2deg);
+    }
+}
+
+.projects{
+    text-align: center;
+	transform: skewY(-2deg);
+	& > * {
+	transform: skewY(2deg);
+	}
+}
+
+.projects-wrap{
+
+    display: inline-flex;
+	flex-wrap: wrap;
+    
+    &__fig{
+    position: relative;
+    max-width: 35rem;
+    margin: 0 auto;
+
+    
+    img{
+    width: 100%;
+    border-radius: .5rem;
+    transition: all .8s;
+    transform: scale(.9);
+
+    }
+
+    }
+
+    &__caption{
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    opacity: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .8s;
+    backface-visibility: hidden;
+    }
+
+    &:hover &__caption{
+    opacity: 1;
+    }
+
+    &:hover img{
+    transform: scale(1.1);
+    text-align: center;
+    z-index: 100;
+    transform: scale(1.1);
+    filter: blur(1px) brightness(80%);
+    }
+
+
+	
 }

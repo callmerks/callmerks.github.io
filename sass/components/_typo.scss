@@ -1,0 +1,64 @@
+
+
+// TEXT-BOXES - TEXT
+
+
+.heading{
+// CONTENT-HEADING-TEXT-MIXIN
+	@mixin heading-text{
+	font-size: 4rem;
+	text-transform: uppercase;
+	display: inline-block;
+	-webkit-background-clip: text;
+	color: transparent;
+	}
+    &__onWhite{
+	&--main{
+	//MIXIN ENDS HERE
+	@include heading-text;
+	background-image: linear-gradient(to left, 
+	rgba($color-main, 0.8), 
+	rgba($color-dark, 0.8));
+	}
+	&--sub{
+	display: block;
+	}
+	}
+	&__onBlue{
+    &--main{
+    @include heading-text;
+	background-image: linear-gradient(to left, 
+	rgba($color-white, 0.8), 
+	rgba($color-grey, 0.8));
+    }
+	}
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-cursive{
+	font-family: 'Satisfy', cursive;
+}
+
+.text-cinzel{
+	font-family: 'Cinzel', serif;
+	font-weight: 700;
+}
+
+.opacity{
+	opacity: .7;
+}
+
+
+// SMALL DEVICES COMMON 
+@media (max-width: 1024px){
+	.sm-device-text-center{
+	text-align: center;
+	}
+	.sm-device-flex-center{
+	display: flex;
+	justify-content: center;
+	}
+}
