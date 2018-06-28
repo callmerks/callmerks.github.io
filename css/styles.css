@@ -550,30 +550,31 @@ span {
     margin: 0 auto; }
     .projects-wrap__fig img {
       width: 100%;
+      height: 20rem;
       border-radius: .5rem;
       transition: all .8s;
       transform: scale(0.9);
       box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5); }
   .projects-wrap__caption {
     position: absolute;
-    top: 36%;
+    top: 27%;
     left: 50%;
     opacity: 0;
     color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
+    font-size: 1.4rem;
     transition: all .8s;
     backface-visibility: hidden;
-    transition: all .8s; }
+    transition: all .8s;
+    text-align: center; }
   .projects-wrap:hover .projects-wrap__caption {
     opacity: 1;
-    transform: translate(-50%, 20%); }
+    transform: translate(-50%, 20%);
+    width: 100%; }
   .projects-wrap:hover img {
     transform: scale(1.1);
     text-align: center;
     z-index: 100;
-    transform: scale(1.1);
-    filter: blur(1px) brightness(80%); }
+    filter: blur(2px) brightness(80%); }
 
 @media (max-width: 658px) {
   .about__composition {

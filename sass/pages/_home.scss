@@ -88,6 +88,7 @@
     
     img{
     width: 100%;
+    height: 20rem;
     border-radius: .5rem;
     transition: all .8s;
     transform: scale(.9);
@@ -99,28 +100,28 @@
 
     &__caption{
     position: absolute;
-    top: 36%;
+    top: 27%;
     left: 50%;
     opacity: 0;
     color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
+    font-size: 1.4rem;
     transition: all .8s;
     backface-visibility: hidden;
     transition: all .8s;
+    text-align: center;
     }
 
     &:hover &__caption{
     opacity: 1;
     transform: translate(-50%, 20%);
+    width: 100%;
     }
 
     &:hover img{
     transform: scale(1.1);
     text-align: center;
     z-index: 100;
-    transform: scale(1.1);
-    filter: blur(1px) brightness(80%);
+    filter: blur(2px) brightness(80%);
     }
 	
 }
