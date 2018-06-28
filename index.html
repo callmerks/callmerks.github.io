@@ -4,6 +4,8 @@
 		<title>Rajat Kumar Sharma</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js">
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 		
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,700i" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
@@ -14,48 +16,38 @@
 		<!-------------------------NAVIGATION MAIN--------------------------->
 		<div class="navigation">
 			<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
 			<label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon"></span>
+				<span class="navigation__icon"></span>
 			</label>
-
 			<div class="navigation__background"></div>
-
-				<nav class="navigation__nav text-cinzel">
-					<ul class="navigation__list">
-						<li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">About</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">Experience</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">Work</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">Contact</a></li>
-					</ul>
-				</nav>
+			<nav class="navigation__nav text-cinzel">
+				<ul class="navigation__list">
+					<li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">About</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">Experience</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">Work</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">Contact</a></li>
+				</ul>
+			</nav>
 			
 		</div>
 		<!----------------------------------HEADER SECTION--------------------------->
 		<header class="header">
 			<!-------------------------------LOGO SECTION--------------------------------->
-			<div class="row">
-				<div class="grid-12">
-					<div class="header__logo margin-bottom-lg">
-						<span class="text-cursive">callme_rks</span>
-						
+					<div class="header__logo">
+						<span class="text-cursive"><a href=""> callme_rks</a></span>
 					</div>
 					
 					<!-----------------------BACKGROUND IMAGES INSIDE HEADER------------------------------>
-					<div class="header__image">
-						<img class="header__image--number1 opacity" src="images/header-image1.png" alt="rajat sharma" />
-						<img class="header__image--number2 opacity" src="images/header-image2.png" alt="rajat sharma" />
-					</div>
+						<img class="header__image header__image--number1" src="images/header-image1.png" alt="rajat sharma" />
+						<img class="header__image header__image--number2" src="images/header-image2.png" alt="rajat sharma" />
+						<img class="header__image header__image--number3" src="images/header-image1.png" alt="rajat sharma" />
 					<!---------------------------------HEADER INTRO----------------------------------->
 					<div class="header__heading text-center">
 						<h2 class="header__heading__primary margin-bottom-sm text-center text-cursive">Are you looking for cool web developer or a designer</h2>
 						<span><a class="btn__white--sm" href="#">Read more</a></span>
 					</div>
-				</div>
-			</div>
 		</header>
-
 		<!------(2)-----------------------------INTRO SECTION---------------------------------->
 		<section id="about" class="about section-padding">
 			<div class="margin-bottom-sm text-center">

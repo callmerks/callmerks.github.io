@@ -24,17 +24,23 @@ more than 1800 =  Big Desktop
 - big-desktop
 */
 @mixin device($breakpoint){
+    @if $breakpoint == xsm-phone {
+	  @media (max-width: 33.75em) {@content};
+	}
 	@if $breakpoint == phone {
-	  @media (max-width: 37.5em) {@content};
+	  @media (max-width: 658px) {@content};
 	}
+	// 768px
 	@if $breakpoint == ipad {
-	  @media (max-width: 48em) {@content};
+	  @media (max-width: 48em) {@content};  
 	}
+	// 900px
 	@if $breakpoint == tab-landscape {
-	  @media (max-width: 56.25em) {@content};
+	  @media (max-width: 56.25em) {@content}; 
 	}
+	// 1024px
 	@if $breakpoint == ipad-pro {
-	  @media (max-width: 64em) {@content};
+	  @media (max-width: 64em) {@content}; 
 	}
 	@if $breakpoint == big-desk {
 	  @media (min-width: 112.5em) {@content};
