@@ -46,3 +46,15 @@ more than 1800 =  Big Desktop
 	  @media (min-width: 112.5em) {@content};
 	}
 }
+
+
+
+
+// MIXIN FOR SMALL BUTTONS
+	@mixin btn-sm{
+    text-decoration: none;
+	padding: 0 1rem;
+	border-radius: 3rem;
+	display: inline-block;
+	}
+	// MIXIN ENDS HERE

@@ -1,23 +1,58 @@
 .wrapper{
 	padding: 1rem;
 }
-.about{
+.website-intro{
 	margin-top: -10vh;
+	padding-top: 14rem;
+	&__composition{
+	height: 30rem;
+	}
+}
+.about{
+	transform: skewY(-2deg);
+	background: linear-gradient(
+    to right bottom, 
+    rgba($color-main, 0.9), 
+    rgba($color-dark, 0.9)),
+	url("../images/header-background.jpg") no-repeat 50%/cover;
+	background-attachment: fixed;
+    background-position: left;
+    color: $color-white;
+	& > * {
+	transform: skewY(2deg);
+	}
 	&__composition{
 	height: 30rem;
 	}
 }
 .experience{
 	transform: skewY(-2deg);
-	margin-top: -3rem;
-	background: linear-gradient(
-    to right bottom, 
-    rgba($color-secondary, 0.9), 
-    rgba($color-dark, 0.9)),
-	url("../images/header-image1.png") no-repeat 50%/cover;
-	background-attachment: fixed;
-    background-position: center;
-    color: $color-white;
+	positive: relative;
+
+	&__icons{
+	font-size: 3rem;
+    justify-content: center;
+    display: flex;
+    padding: 2rem;
+    color: $color-grey;
+    font-weight: 700;
+    border-bottom: 1px solid $color-secondary;
+	}
+
+	&__content-box{
+	text-align: center;
+	color: $color-secondary;
+	}
+
+	&__content-box-back{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: $color-secondary;
+	padding: 3rem;
+	letter-spacing: 3px;
+	text-align: center;
+	}
 
     & > * {
     transform: skewY(2deg);
@@ -26,6 +61,14 @@
 
 .projects{
     text-align: center;
+    background: linear-gradient(
+    to right bottom, 
+    rgba($color-main, 0.9), 
+    rgba($color-dark, 0.9)),
+	url("../images/header-background.jpg") no-repeat 50%/cover;
+	background-attachment: fixed;
+    background-position: left;
+    color: $color-white;
 	transform: skewY(-2deg);
 	& > * {
 	transform: skewY(2deg);
@@ -48,7 +91,7 @@
     border-radius: .5rem;
     transition: all .8s;
     transform: scale(.9);
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.6);
+    box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5);
 
     }
 
@@ -81,11 +124,6 @@
     }
 	
 }
-
-.footer{
-	background: $color-black;
-}
-
 
 
 

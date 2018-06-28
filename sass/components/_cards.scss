@@ -3,27 +3,29 @@
    -moz-perspective: 120rem;
    -webkit-perspective: 120rem;
 	position: relative;
-	height: 40rem;
+	height: 43rem;
     
     &__side{
-    height: 39rem;
+    height: 43rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    border-radius: 1rem;
     backface-visibility: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5);
 
     &--front{
-    background: $color-white;
+
+    background-image: linear-gradient(to right, 
+	rgba($color-main, 1), 
+	rgba($color-dark, 1));
     color: $color-main;
     }
 
     &--back{
-    background-image: linear-gradient(to right, 
-	rgba($color-main, 1), 
-	rgba($color-dark, 1));
+    background: $color-grey;
     transform: rotateY(180deg);
     }
     }

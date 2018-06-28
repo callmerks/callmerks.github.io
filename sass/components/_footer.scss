@@ -1,3 +1,36 @@
 .footer{
-	animation: moveUp 1s ease-out;
+	background-color:black;
+	&__logo{
+	display: block;
+	text-align: center;
+	font-size: 3rem;
+	&--link{
+	color: $color-secondary!important;
+	}
+	} 
+	&__navigation{
+	text-align: center;
+	}
+	&__li{
+	display: inline;
+	padding: 0 2rem;
+	border-right: 1px solid $color-main;
+	}
+	&__links{
+    font-size: 3rem;
+    color: $color-grey;
+	}
+}
+
+.more{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	&__info{
+	margin: 2rem;
+	padding: 1rem;
+	background: $color-main;
+	color: $color-secondary;
+	transform: skewX(-15deg);
+	}
 }

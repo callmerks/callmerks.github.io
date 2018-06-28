@@ -4,8 +4,9 @@
 		<title>Rajat Kumar Sharma</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="icons/iconbasics.css">
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js">
-<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+		<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 		
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,700i" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
@@ -22,11 +23,13 @@
 			<div class="navigation__background"></div>
 			<nav class="navigation__nav text-cinzel">
 				<ul class="navigation__list">
-					<li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
-					<li class="navigation__item"><a class="navigation__link" href="#">About</a></li>
-					<li class="navigation__item"><a class="navigation__link" href="#">Experience</a></li>
-					<li class="navigation__item"><a class="navigation__link" href="#">Work</a></li>
-					<li class="navigation__item"><a class="navigation__link" href="#">Contact</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="/index.html">Home</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#website-intro">Introduction</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#about">About</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#experience">Experience</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#projects">Work</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#contact">Contact</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#follow-me">Folow Me</a></li>
 				</ul>
 			</nav>
 			
@@ -34,31 +37,43 @@
 		<!----------------------------------HEADER SECTION--------------------------->
 		<header class="header">
 			<!-------------------------------LOGO SECTION--------------------------------->
-					<div class="header__logo">
-						<span class="text-cursive"><a href=""> callme_rks</a></span>
-					</div>
-					
-					<!-----------------------BACKGROUND IMAGES INSIDE HEADER------------------------------>
-						<img class="header__image header__image--number1" src="images/header-image1.png" alt="rajat sharma" />
-						<img class="header__image header__image--number2" src="images/header-image2.png" alt="rajat sharma" />
-						<img class="header__image header__image--number3" src="images/header-image1.png" alt="rajat sharma" />
-					<!---------------------------------HEADER INTRO----------------------------------->
-					<div class="header__heading text-center">
-						<h2 class="header__heading__primary margin-bottom-sm text-center text-cursive">Are you looking for cool web developer or a designer</h2>
-						<span><a class="btn__white--sm" href="#">Read more</a></span>
-					</div>
+			<div class="header__logo">
+				<span class="text-cursive"><a class="logo-link" href="">RajatSharma</a></span>
+			</div>
+			
+			<!-----------------------BACKGROUND IMAGES INSIDE HEADER------------------------------>
+			<img class="header__image header__image--number1" src="images/header-image1.png" alt="rajat sharma" />
+			<img class="header__image header__image--number2" src="images/header-image2.png" alt="rajat sharma" />
+			<img class="header__image header__image--number3" src="images/header-image1.png" alt="rajat sharma" />
+			<!---------------------------------HEADER INTRO----------------------------------->
+			<div class="header__heading text-center">
+				<p class="header__heading__primary margin-bottom-m text-center">Are you looking for cool web developer or a designer?</p>
+				<span><a class="btn btn__green--sm" href="#website-intro">Read more</a></span>
+			</div>
 		</header>
-		<!------(2)-----------------------------INTRO SECTION---------------------------------->
-		<section id="about" class="about section-padding">
+		<!------(2)-----------------------------WEBSITE INTRO---------------------------------->
+		<section id="website-intro" class="website-intro section-padding panel">
+			<div class="text-center margin-bottom-sm">
+				<h1 class="heading__onWhite--main">Think Future!</h1>
+			</div>
+			<div class="row">
+				<h3 class="paragraph text-center">You are entered into a sassy and massy website </h3>
+				<p class="paragraph">Probably, You gonna love this website but actually for me this is more than website or portfolio. Before you see my work and expriences and all about myself. I would like to leave you a short note here. This website has some really advanced features, which might can not able to support some browsers. The idea of building this portfolio was to present my skills on the behalf of latest tools and technologies.</p>
+				<span class="text-center text-cinzel"><a href="#about" class="btn__dark--sm" >Begin Here &rarr;</a></span>
+			</div>
+			
+		</section>
+		<!------(3)-----------------------------INTRO SECTION---------------------------------->
+		<section id="about" class="about section-padding panel">
 			<div class="margin-bottom-sm text-center">
-				<h1 class="heading__onWhite--main">Web Developer & Designer</h1>
+				<h1 class="heading__onDark--main">Web Developer & Designer</h1>
 			</div>
 			<div class="row ">
 				<h1 class="margin-bottom-sm text-cinzel">Intro</h1>
 				<div class="grid-6 margin-bottom-lg">
-					<p class="paragraph">Hello, Myself rajat Kumar Sharma. For short, Just call me RKS or RJ. I bring more than 2 years of experience in Web Development industry. I do love my Job and I am passionate about to be a full stack developer. Well, It is not a long way to go because I have a high level of Front end knowledge and I am on my way to be a full stack developer soon. </p>
-					<p class="paragraph">I am always aware of web development industry and the top most front end and backend technologies. I am proud to be a part of this community.</p>
-					<span><a href="#" class="btn__blue--sm" >Learn More &rarr;</a></span>
+					<p class="paragraph">Hello, My name is Rajat Kumar Sharma. For short, Just call me RKS or RJ. I bring more than 2 years of experience in Web Development industry. I love my Job and I am passionate about to become a Full-Stack Developer or Software Engineer. Well, It is not far away because, I have a high level of Front-End knowledge and I am on my way to become a Full Stack Developer soon. </p>
+					<p class="paragraph">I am always aware of the web development industry or web standards and the top most technologies. I am proud to be a part of this community.</p>
+					<span class="text-cinzel"><a href="#experience" class="btn__white--sm" >Learn More &rarr;</a></span>
 					
 				</div>
 				<div class="grid-6 about__composition">
@@ -71,70 +86,113 @@
 			</div>
 			
 		</section>
-		<!------(3)-----------------------------Experiences---------------------------------->
-		<section id="about" class="experience section-padding">
+		<!------(4)-----------------------------Experiences---------------------------------->
+		<section id="experience" class="experience section-padding panel">
 			<div class="text-center margin-bottom-lg">
-				<h1 class="heading__onBlue--main">Experience</h1>
-				<p class="heaidng__onBlue--secondary">hello</p>
+				<h1 class="heading__onWhite--main margin-bottom-sm">Experience</h1>
+				<p class="heaidng__onWhite--secondary">Hover/hold cards for additional Informations</p>
 			</div>
 			<div class="row ">
+				<!------ section-1-experience---->
 				<div class="grid-4">
 					<div class="cards">
 						<div class="cards__side cards__side--front">
-							<p>hello</p>
+							<i class="icon-basic-pencil-ruler-pen experience__icons"></i>
+							<div class="experience__content-box">
+								<h3 class="margin-bottom-sm margin-top-sm">Design</h3>
+								<ul class="ul">
+									<li>UX</li>
+									<li>UI</li>
+									<li>Mobile Apps</li>
+									<li>Logos</li>
+									<li>Sketches</li>
+									<li>Photoshop</li>
+									<li>Illustrator</li>
+								</ul>
+							</div>
 						</div>
 						<div class="cards__side cards__side--back">
-							<p>hello</p>
+							<p class="experience__content-box-back text-cinzel">I simply put all the important discussions and mature planning before I start the work and implement the coding </p>
 						</div>
 					</div>
 				</div>
+				<!------ section-2-experience---->
 				<div class="grid-4">
 					<div class="cards">
 						<div class="cards__side cards__side--front">
+							<i class="icon-basic-webpage-multiple experience__icons"></i>
+							<div class="experience__content-box">
+								<h3 class="margin-bottom-sm margin-top-sm">Front Developer</h3>
+								<ul class="ul">
+									<li>SASS</li>
+									<li>JavaScript/ES-2015</li>
+									<li>jQuery</li>
+									<li>Drupal/WordPress</li>
+									<li>HTML</li>
+									<li>React/Vue</li>
+									<li>M-first/D-first</li>
+								</ul>
+							</div>
 						</div>
 						<div class="cards__side cards__side--back">
+							<p class="experience__content-box-back text-cinzel">I tend to write neat & clean code and always try to bring all imaginations into realities on my projects</p>
 						</div>
 					</div>
 				</div>
+				<!------ section-3-experience---->
 				<div class="grid-4">
 					<div class="cards">
 						<div class="cards__side cards__side--front">
+							<i class="icon-basic-server2 experience__icons"></i>
+							<div class="experience__content-box">
+								<h3 class="margin-bottom-sm margin-top-sm">Backend Developer</h3>
+								<ul class="ul">
+									<li>Node</li>
+									<li>Express</li>
+									<li>SQL</li>
+									<li>Firebase</li>
+									<li>Redux</li>
+									<li>Servers</li>
+									<li>MongoDB</li>
+								</ul>
+							</div>
 						</div>
 						<div class="cards__side cards__side--back">
+							<p class="experience__content-box-back text-cinzel">I genuinely care about the logics before use something. For example - when to use technologies like mongodb or node and express etc.  </p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!------(4)-----------------------------PROJECTS---------------------------------->
-		<section id="about" class="projects section-padding">
+		<!------(5)-----------------------------PROJECTS---------------------------------->
+		<section id="projects" class="projects section-padding panel">
 			<div class="text-center margin-bottom-lg">
-				<h1 class="heading__onWhite--main">Projects</h1>
-				<p class="heading__onWhite--secondary">hello</p>
+				<h1 class="heading__onDark--main margin-bottom-sm">Projects</h1>
+				<p class="heading__onDark--secondary">Hover/tap on Image to see Project Description</p>
 			</div>
 			<div class="row">
 				<div class="grid-12 margin-bottom-lg">
 					<div class="projects-wrap">
 						<figure class="projects-wrap__fig">
-							<img src="images/header-image1.png">
+							<img src="images/shopping-cart.png">
 							<figcaption class="projects-wrap__caption">image</figcaption>
 						</figure>
 					</div>
 					<div class="projects-wrap">
 						<figure class="projects-wrap__fig">
-							<img src="images/header-image1.png">
+							<img src="images/portfolio.png">
 							<figcaption class="projects-wrap__caption">image</figcaption>
 						</figure>
 					</div>
 					<div class="projects-wrap">
 						<figure class="projects-wrap__fig">
-							<img src="images/header-image1.png">
+							<img src="images/krazyfood.png">
 							<figcaption class="projects-wrap__caption">image</figcaption>
 						</figure>
 					</div>
 					<div class="projects-wrap">
 						<figure class="projects-wrap__fig">
-							<img src="images/header-image1.png">
+							<img src="images/decreto.png">
 							<figcaption class="projects-wrap__caption">image</figcaption>
 						</figure>
 					</div>
@@ -151,27 +209,51 @@
 						</figure>
 					</div>
 				</div>
-				<span><a href="#" class="btn__blue--sm">Github</a></span>
+				<p class="text-center margin-bottom-sm">You can have a look on Github</p>
+				<span class="text-cinzel"><a href="https://github.com/callmerks" class="btn__white--sm"> Click Here</a></span>
 			</div>
 		</section>
-		<footer class="footer section-padding">
-			<div class="footer__logobox">
-				<img src="">
-				<h1>hello</h1>
+		<!------(6)-----------------------------CONTACT---------------------------------->
+		<section id="contact" class="contact section-padding panel">
+			<div class="text-center">
+				<h3 class="heading__onWhite--secondary  margin-bottom-lg margin-top-lg text-cinzel">Did you make your mind to collabrate with me?</h3>
+				<p class="heading__onWhite--secondary margin-bottom-lg">I am simply open to discussing any kind of Projects or Ideas. So, let's do this</p>
 			</div>
-			<div class="footer navigation">
-				<nav">
-					<ul class="">
-						<li class=""><a href="#">Home</a></li>
-						<li class=""><a href="#">Home</a></li>
-						<li class=""><a href="#">Home</a></li>
-						<li class=""><a href="#">Home</a></li>
-						<li class=""><a href="#">Home</a></li>
-						<li class=""><a href="#">Home</a></li>
-					</ul>
-				</nav>
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup">
+				<form action="https://github.us18.list-manage.com/subscribe/post?u=5adfd8b171f724bc47b470da8&amp;id=8c034ba345" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+						<div class="clear mc-embed-div"><input type="submit" value="get in touch" name="subscribe" id="mc-embedded-subscribe" class="button text-cinzel margin-bottom-lg"></div>
+					</div>
+				</form>
 			</div>
-		</footer>
-		
-	</body>
+			<!--End mc_embed_signup-->
+		</div>
+	</section>
+	<!---------------FOOTER SECTION SEPERATE FROM WRAPPER---------->
+	<footer id="follow-me" class="footer section-padding panel">
+		<div class="footer__logo">
+			<span class="text-cursive"><a class="logo-link footer__logo--link" href="">RajatSharma</a></span>
+		</div>
+		<div class="footer__navigation">
+		<nav>
+			<ul class="ul margin-top-sm margin-bottom-sm">
+				<li class="footer__li"><a class="footer__links" href=""><i class="fa fa-facebook"></i></a></li>
+				<li class="footer__li"><a class="footer__links" href=""><i class="fa fa-instagram"></i></a></li>
+				<li class="footer__li"><a class="footer__links" href=""><i class="fa fa-dribbble"></i></a></li>
+				<li class="footer__li"><a class="footer__links" href=""><i class="fa fa-github"></i></a></li>
+				<li class="footer__li"><a class="footer__links" href=""><i class="fa fa-whatsapp"></i></a></li>
+				<li class="footer__li"><a class="footer__links" href=""><i class="fa fa-google"></i></a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="more">
+		<p class="more__info more__copyrights"><i class="fa fa-copyright"></i> callmerks.github.io</p>
+		<p class="more__info more__contact"><i class="fa fa-phone"></i> 71518402</p>
+		<p class="more__info more__email">kumarindenmark@gmail.com</p>
+	</div>
+	</footer>
+	
+</body>
 </html>

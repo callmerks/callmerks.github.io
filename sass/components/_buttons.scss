@@ -1,54 +1,83 @@
 .btn{
-
-    // MIXIN FOR SMALL BUTTONS
-	@mixin btn-sm{
-    text-decoration: none;
-	padding: 0 1rem;
-	border-radius: 3rem;
-	font-weight: 700;
-	display: inline-block;
-	}
-	// MIXIN ENDS HERE
+    z-index: 200;
     
     // BUTTON-WHITE-COLOR
-    &__white{
+    &__green{
 
 	&--sm{
 	&:link,
 	&:visited{
 	@include btn-sm;
-	background: $color-white;
-	color: $color-black;
+	border: 2px solid $color-secondary;
+    background: transparent;
+	color: $color-white;
+	transition: all .4s ease;
 	}
     &:hover{
-    background: linear-gradient(
-    to right bottom, 
-    rgba($color-main, 0.9), 
-    rgba($color-black, 0.9)),
-	url("../images/header-image1.png") no-repeat 50%/cover;
-	background-attachment: fixed;
-    background-position: center;
     color: $color-white;
+    background: $color-secondary;
     }
 	}
 	}
-	// BUTTON-BLUE-COLOR
-	&__blue{
+	@mixin btn-rec{
+	border-radius: inherit;
+	transition: all .2s ease;
+	&:hover{
+    background: transparent;
+	border-radius: inherit;
+	}
+	}
+	// BUTTON-WHITE-COLOR
+	&__white{
 	&--sm{
 	&:link,
 	&:visited{
 	@include btn-sm;
-	border-left: 2px solid $color-dark;
-	border-radius: inherit;
+	@include btn-rec;
+	color: $color-white;
+	border-left: 2px solid $color-white;
 	}
 	&:hover{
-	background: transparent;
-	border-bottom: 2px solid $color-dark;
+	color: $color-white;
+	border-bottom: 2px solid $color-white;
+	}
+	}
+	}
+	// BUTTON-DARK-COLOR
+	&__dark{
+	&--sm{
+	&:link,
+	&:visited{
+	@include btn-sm;
+	@include btn-rec;
+	color: $color-main;
+	border-left: 2px solid $color-main;
+	}
+	&:hover{
+	border-bottom: 2px solid $color-main;
 	color: $color-dark;
-	border-radius: inherit;
-	transition: all .2s ease;
 	}
 	}
 	}
 }
 
+
+#mc_embed_signup{
+	display: block;
+}
+#mc-embedded-subscribe{
+	background: transparent;
+	border: none;
+	font-size: 2rem;
+	border-left: 2px solid $color-main;
+	padding: 1rem 2rem;
+	cursor: pointer;
+	transition: all .4s ease;
+	&:hover{
+	border-bottom: 2px solid $color-main;
+	}
+
+}
+.mc-embed-div{
+	text-align: center;
+}

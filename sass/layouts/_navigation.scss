@@ -25,8 +25,8 @@
     right: 2rem;
 	z-index: 100;
     background-image: linear-gradient(to left, 
-	rgba($color-main, 0.9), 
-	rgba($color-dark, 0.9));
+	rgba($color-white, 0.7), 
+	rgba($color-grey, 0.7));
 	transition: transform .8s cubic-bezier(0.6, -0.28, 0.735, 0.045);;
 
 	//transform: scale(25);
