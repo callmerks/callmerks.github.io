@@ -14,19 +14,18 @@
     width: 100%;
     border-radius: 1rem;
     backface-visibility: hidden;
-    box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5);
+    box-shadow: 0 3px 10px 0 rgba(233, 240, 243, 0.5);
 
     &--front{
 
-    background-image: linear-gradient(to right, 
-	rgba($color-main, 1), 
-	rgba($color-dark, 1));
-    color: $color-main;
+    background: $color-white;
     }
 
     &--back{
-    background: $color-grey;
     transform: rotateY(180deg);
+    background-image: linear-gradient(to right, 
+	rgba($color-secondary, 1), 
+	rgba($color-main, 1));
     }
     }
 	

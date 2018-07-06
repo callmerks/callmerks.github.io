@@ -1,23 +1,41 @@
 .wrapper{
 	padding: 1rem;
 }
-.website-intro{
+
+.logo-link{
+	&:link,
+	&:visited{
+	text-decoration: none;
+	color: $color-secondary;
+	}
+}
+
+.intro{
+    background: $color-grey;
 	margin-top: -10vh;
 	padding-top: 14rem;
+	transform: skewY(-2deg);
+	position: relative;
+	& > * {
+    transform: skewY(2deg);
+	}
 	&__composition{
 	height: 30rem;
 	}
+	&__section-1{
+	border-right: 1px solid $color-main;
+	padding-right: 2rem;
+	}
+	&__section-2{
+	padding-right: 2rem;
+	}
+	
 }
 .about{
 	transform: skewY(-2deg);
-	background: linear-gradient(
-    to right bottom, 
-    rgba($color-main, 0.9), 
-    rgba($color-dark, 0.9)),
-	url("../images/header-background.jpg") no-repeat 50%/cover;
-	background-attachment: fixed;
-    background-position: left;
+	background: #000000;
     color: $color-white;
+    margin-top: -1rem;
 	& > * {
 	transform: skewY(2deg);
 	}
@@ -26,29 +44,33 @@
 	}
 }
 .experience{
+    @include bgDarkImg;
 	transform: skewY(-2deg);
 	positive: relative;
+	margin-top: -1rem;
+	color: $color-white;
 
 	&__icons{
 	font-size: 3rem;
     justify-content: center;
     display: flex;
     padding: 2rem;
-    color: $color-grey;
-    font-weight: 700;
+    color: $color-dark;
+    font-weight: 100;
     border-bottom: 1px solid $color-secondary;
 	}
 
 	&__content-box{
 	text-align: center;
-	color: $color-secondary;
+	color: $color-main;
+	font-weight: 500;
 	}
 
 	&__content-box-back{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	color: $color-secondary;
+	color: $color-white;
 	padding: 3rem;
 	letter-spacing: 3px;
 	text-align: center;
@@ -60,23 +82,17 @@
 }
 
 .projects{
+    background: $color-grey;
     text-align: center;
-    background: linear-gradient(
-    to right bottom, 
-    rgba($color-main, 0.9), 
-    rgba($color-dark, 0.9)),
-	url("../images/header-background.jpg") no-repeat 50%/cover;
-	background-attachment: fixed;
-    background-position: left;
-    color: $color-white;
 	transform: skewY(-2deg);
+	margin-top: -1rem;
 	& > * {
 	transform: skewY(2deg);
 	}
 }
 
 .projects-wrap{
-
+    
     display: inline-flex;
 	flex-wrap: wrap;
     
@@ -103,12 +119,13 @@
     top: 27%;
     left: 50%;
     opacity: 0;
-    color: #fff;
+    color: $color-main;
     font-size: 1.4rem;
     transition: all .8s;
     backface-visibility: hidden;
-    transition: all .8s;
+    transition: all .8s ease;
     text-align: center;
+    z-index: 5000;
     }
 
     &:hover &__caption{
@@ -121,11 +138,19 @@
     transform: scale(1.1);
     text-align: center;
     z-index: 100;
-    filter: blur(2px) brightness(80%);
+    filter: blur(2px) grayscale(100%);
     }
 	
 }
 
+.contact{
+	@include bgDarkImg;
+    transform: skewY(-2deg);
+    color: $color-main;
+    & > * {
+    transform: skewY(2deg);
+    }
+}
 
 
 @include device(phone){
@@ -134,6 +159,15 @@
     height: 23rem;
     }
     }
+}
+
+@include device(ipad){
+	.intro{
+	&__section-1{
+	padding-right: initial;
+	border-right: none;
+	}
+	}
 }
 
 @include device(ipad-pro){

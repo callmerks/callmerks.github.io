@@ -1,11 +1,12 @@
 .footer{
-	background-color:black;
+    margin-top: -2rem;
+	background-color: $color-main;
 	&__logo{
 	display: block;
 	text-align: center;
 	font-size: 3rem;
 	&--link{
-	color: $color-secondary!important;
+	color: $color-white!important;
 	}
 	} 
 	&__navigation{

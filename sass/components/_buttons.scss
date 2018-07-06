@@ -10,12 +10,12 @@
 	@include btn-sm;
 	border: 2px solid $color-secondary;
     background: transparent;
-	color: $color-white;
+	color: $color-secondary;
 	transition: all .4s ease;
 	}
     &:hover{
     color: $color-white;
-    background: $color-secondary;
+    background: $color-main;
     }
 	}
 	}
@@ -28,23 +28,7 @@
 	}
 	}
 	// BUTTON-WHITE-COLOR
-	&__white{
-	&--sm{
-	&:link,
-	&:visited{
-	@include btn-sm;
-	@include btn-rec;
-	color: $color-white;
-	border-left: 2px solid $color-white;
-	}
-	&:hover{
-	color: $color-white;
-	border-bottom: 2px solid $color-white;
-	}
-	}
-	}
-	// BUTTON-DARK-COLOR
-	&__dark{
+	&__mainBtn{
 	&--sm{
 	&:link,
 	&:visited{
@@ -54,8 +38,26 @@
 	border-left: 2px solid $color-main;
 	}
 	&:hover{
-	border-bottom: 2px solid $color-main;
-	color: $color-dark;
+	color: $color-secondary;
+	border-bottom: 2px solid $color-secondary;
+	border-left: 2px solid $color-secondary;
+	}
+	}
+	}
+	// BUTTON-DARK-COLOR
+	&__darkBtn{
+	&--sm{
+	&:link,
+	&:visited{
+	@include btn-sm;
+	@include btn-rec;
+	color: $color-main;
+	border-left: 2px solid $color-main;
+	}
+	&:hover{
+	border-bottom: 2px solid $color-secondary;
+	border-left: 2px solid $color-secondary;
+	color: $color-secondary;
 	}
 	}
 	}
@@ -69,12 +71,13 @@
 	background: transparent;
 	border: none;
 	font-size: 2rem;
-	border-left: 2px solid $color-main;
+	color: $color-white;
+	border-left: 2px solid $color-white;
 	padding: 1rem 2rem;
 	cursor: pointer;
 	transition: all .4s ease;
 	&:hover{
-	border-bottom: 2px solid $color-main;
+	border-bottom: 2px solid $color-white;
 	}
 
 }

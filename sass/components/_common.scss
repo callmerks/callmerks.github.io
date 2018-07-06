@@ -1,11 +1,3 @@
 .ul{
 	list-style: none;
 }
-
-.logo-link{
-	&:link,
-	&:visited{
-	text-decoration: none;
-	color: $color-white;
-	}
-}

@@ -12,24 +12,24 @@
 	-webkit-background-clip: text;
 	color: transparent;
 	}
-    &__onWhite{
+    &__onMainBg{
 	&--main{
 	//MIXIN ENDS HERE
 	@include heading-text;
-	background-image: linear-gradient(to left, 
-	rgba($color-main, 0.8), 
-	rgba($color-dark, 0.8));
+	background-image: linear-gradient(to right bottom, 
+	rgba($color-main, 0.9), 
+	rgba($color-secondary, 0.9));
 	}
 	&--sub{
 	display: block;
 	}
 	}
-	&__onDark{
+	&__onDarkBg{
     &--main{
     @include heading-text;
 	background-image: linear-gradient(to left, 
-	rgba($color-white, 0.8), 
-	rgba($color-grey, 0.8));
+	rgba($color-secondary, 0.8), 
+	rgba($color-main, 0.8));
     }
 	}
 }

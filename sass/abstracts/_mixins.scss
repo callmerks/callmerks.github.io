@@ -57,4 +57,26 @@ more than 1800 =  Big Desktop
 	border-radius: 3rem;
 	display: inline-block;
 	}
-	// MIXIN ENDS HERE
+// BUTTON MIXIN ENDS HERE
+
+// MIXIN FOR BACKGROUND IMAGES
+	@mixin bgMainImg{
+    background: linear-gradient(
+    to right bottom, 
+    rgba($color-main, 0.9), 
+    rgba($color-dark, 0.9)),
+	url("../images/header-background.png") no-repeat 50%/cover;
+	background-attachment: fixed;
+    background-position: center;
+	}
+
+	@mixin bgDarkImg{
+    background: linear-gradient(
+    to right bottom, 
+    rgba($color-dark, 0.2), 
+    rgba($color-dark, 0.2)),
+	url("../images/header-background.png") no-repeat 50%/cover;
+	background-attachment: fixed;
+    background-position: center;
+	}
+// BACKGROUND IMAGES MIXIN ENDS HERE
