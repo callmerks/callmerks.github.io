@@ -30,7 +30,7 @@
 
 // PARAGRAPH SPACING
 .paragraph{
-	&:not( :last-child){
-	margin-bottom: 3rem;
+	&:last-child{
+	margin-bottom: 0;
 	}
 }

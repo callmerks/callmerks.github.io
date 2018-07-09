@@ -6,16 +6,18 @@
 	&:link,
 	&:visited{
 	text-decoration: none;
-	color: $color-secondary;
+	color: $color-main;
+	font-size: 2.5rem;
 	}
 }
 
 .intro{
     background: $color-grey;
 	margin-top: -10vh;
-	padding-top: 14rem;
+	padding-top: 5rem;
 	transform: skewY(-2deg);
 	position: relative;
+	z-index: 1;
 	& > * {
     transform: skewY(2deg);
 	}
@@ -33,37 +35,85 @@
 }
 .about{
 	transform: skewY(-2deg);
-	background: #000000;
+	background: linear-gradient(
+    to right bottom, 
+    rgba($color-dark, 0.6), 
+    rgba($color-dark, 1)),
+	url("../images/intro-background.jpg") no-repeat 50%/cover;
+	background-attachment: fixed;
+    background-position: center;
     color: $color-white;
-    margin-top: -1rem;
+    margin-top: -1px;
 	& > * {
 	transform: skewY(2deg);
 	}
-	&__composition{
-	height: 30rem;
+
+	&__section{
+	max-width: 100rem;
+	margin: 0 auto;
 	}
 }
 .experience{
-    @include bgDarkImg;
+    background: $color-grey;
 	transform: skewY(-2deg);
 	positive: relative;
 	margin-top: -1rem;
-	color: $color-white;
 
 	&__icons{
-	font-size: 3rem;
+	font-size: 4rem;
     justify-content: center;
     display: flex;
     padding: 2rem;
-    color: $color-dark;
+    color: $color-main;
     font-weight: 100;
     border-bottom: 1px solid $color-secondary;
 	}
 
-	&__content-box{
-	text-align: center;
-	color: $color-main;
-	font-weight: 500;
+	&__heading-design{
+	background: linear-gradient(
+    to right bottom, 
+    rgba($color-dark, 0.6), 
+    rgba($color-dark, 0.8)),
+	url("../images/sketches.jpg") no-repeat 50%/cover;
+	@include experience-heading;
+	}
+
+	&__heading-frontend{
+	background: linear-gradient(
+    to right bottom, 
+    rgba($color-dark, 0.6), 
+    rgba($color-dark, 0.8)),
+	url("../images/frontend.jpg") no-repeat 50%/cover;
+	@include experience-heading;
+	}
+
+	&__heading-backend{
+	background: linear-gradient(
+    to right bottom, 
+    rgba($color-dark, 0.6), 
+    rgba($color-dark, 0.8)),
+	url("../images/database.png") no-repeat 50%/cover;
+	@include experience-heading;
+	}
+    
+    &__heading-span{
+    width: 50%;
+    float: right;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    font-weight: 400;
+    font-size: 3rem;
+    background: $color-main;
+
+    }
+
+	&__heading-3{
+	background: linear-gradient(
+    to right bottom, 
+    rgba($color-dark, 0.6), 
+    rgba($color-dark, 0.8)),
+	url("../images/sketches.jpg") no-repeat 50%/cover;
+	@include experience-heading;
 	}
 
 	&__content-box-back{
@@ -82,33 +132,35 @@
 }
 
 .projects{
-    background: $color-grey;
+    background: #fff;
+    border-bottom: 1px solid $color-main;
+    border-top: 1px solid $color-main;
     text-align: center;
 	transform: skewY(-2deg);
-	margin-top: -1rem;
 	& > * {
 	transform: skewY(2deg);
 	}
 }
 
 .projects-wrap{
-    
     display: inline-flex;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: .2rem auto;
     
     &__fig{
     position: relative;
     max-width: 35rem;
-    margin: 0 auto;
-
+    margin: 1rem;
+    height: 20rem;
     
     img{
+    position: relative;
     width: 100%;
     height: 20rem;
-    border-radius: .5rem;
-    transition: all .8s;
-    transform: scale(.9);
-    box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5);
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) , 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -mox-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) , 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) , 0 0 40px rgba(0, 0, 0, 0.1) inset;
 
     }
 
@@ -116,48 +168,54 @@
 
     &__caption{
     position: absolute;
-    top: 27%;
-    left: 50%;
-    opacity: 0;
+    top: 0%;
+    left: 0%;
     color: $color-main;
-    font-size: 1.4rem;
-    transition: all .8s;
+    display: none;
     backface-visibility: hidden;
-    transition: all .8s ease;
     text-align: center;
     z-index: 5000;
     }
 
+    &__description{
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .8s ease-out;
+    }
+
     &:hover &__caption{
     opacity: 1;
-    transform: translate(-50%, 20%);
     width: 100%;
+    background: $color-dark;
+    color: $color-white;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+    display: block;
+    transform: scale(1.003);
     }
 
     &:hover img{
-    transform: scale(1.1);
     text-align: center;
     z-index: 100;
-    filter: blur(2px) grayscale(100%);
     }
 	
 }
 
-.contact{
-	@include bgDarkImg;
-    transform: skewY(-2deg);
-    color: $color-main;
-    & > * {
-    transform: skewY(2deg);
-    }
-}
+.subscribe{
+    position: relative;
+    margin-top: -2rem;
 
-
-@include device(phone){
-	.about {
-    &__composition{
-    height: 23rem;
+    &__content{
+    background: $color-white;
+    opacity: .8;
+    padding-top: 4rem;
     }
+
+    &__content-heading{
+    color: $color-secondary;
     }
 }
 

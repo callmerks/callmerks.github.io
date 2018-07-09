@@ -1,16 +1,19 @@
 .header{
-	background:
+	background: linear-gradient(
+    to right bottom, 
+    rgba($color-dark, 0.6), 
+    rgba($color-dark, 0.6)),
 	url("../images/header-background.jpg") no-repeat 50%/cover;
 	background-attachment: fixed;
     background-position: center;
-    height: 95vh;
+    filter: brightness(.85);
+    height: 100vh;
 	position: relative;
-	color: $color-secondary;
+	color: $color-main;
 	z-index: 1;
 
     animation: moveInDown .5s ease-out;
-    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 85vh, 0 100%);
-	clip-path: polygon(0% 0%, 100% 0, 100% 85vh, 0 100%);
+    
     // LOGO
 	&__logo{
     animation: moveInRight 1.5s ease-out;
@@ -66,3 +69,16 @@
 }
 }
 
+
+
+
+.rks{
+	font-size: 30rem;
+	text-transform: uppercase;
+	display: inline-block;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: url("../images/grass.jpg");
+    background-position: center;
+    font-family: fantasy;
+}

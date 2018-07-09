@@ -80,3 +80,17 @@ more than 1800 =  Big Desktop
     background-position: center;
 	}
 // BACKGROUND IMAGES MIXIN ENDS HERE
+
+
+// EXPERIENCE HEADINGS
+@mixin experience-heading{
+    color: $color-white;
+	font-weight: 300;
+    background-attachment: fixed;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+    padding: 5rem 0 6.6rem;
+    border-bottom: 1px solid $color-main;
+    }
+// EXPERINCE HEADING ENDS HERE

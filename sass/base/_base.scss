@@ -7,10 +7,6 @@
 }
 html{
 	font-size: 62.5%;
-
-	@include device(phone){
-	font-size: 50%;
-	}
 	
 }
 body{
@@ -33,3 +29,4 @@ body{
 span{
 	display: block;
 }
+

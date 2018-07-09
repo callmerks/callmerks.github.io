@@ -1,12 +1,11 @@
 .footer{
     margin-top: -2rem;
-	background-color: $color-main;
 	&__logo{
 	display: block;
 	text-align: center;
 	font-size: 3rem;
 	&--link{
-	color: $color-white!important;
+	color: $color-secondary!important;
 	}
 	} 
 	&__navigation{
@@ -16,10 +15,34 @@
 	display: inline;
 	padding: 0 2rem;
 	border-right: 1px solid $color-main;
+
+	&:last-child{
+	border-right: none;
+	}
 	}
 	&__links{
     font-size: 3rem;
-    color: $color-grey;
+    color: $color-secondary;
+
+    &-facebook{
+    color: #3b5998;
+    }
+    
+    &-instagram{
+    color: #b71a7f;
+    }
+
+    &-linkedin{
+    color: #3b5998;
+    }
+
+    &-dribble{
+    color: #cc5496;
+    }
+
+    &-github{
+    color: #5c6bc0;
+    }
 	}
 }
 
@@ -27,11 +50,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
 	&__info{
 	margin: 2rem;
-	padding: 1rem;
-	background: $color-main;
-	color: $color-secondary;
-	transform: skewX(-15deg);
+    color: #55e88a;
+    font-size: 1.4rem;
 	}
 }

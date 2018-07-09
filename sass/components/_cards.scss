@@ -3,22 +3,20 @@
    -moz-perspective: 120rem;
    -webkit-perspective: 120rem;
 	position: relative;
-	height: 43rem;
+	height: 50rem;
     
     &__side{
-    height: 43rem;
+    height: 50rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    border-radius: 1rem;
     backface-visibility: hidden;
     box-shadow: 0 3px 10px 0 rgba(233, 240, 243, 0.5);
 
     &--front{
-
-    background: $color-white;
+    border: 1px solid $color-secondary;
     }
 
     &--back{

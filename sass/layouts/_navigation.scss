@@ -5,31 +5,26 @@
     }
 
     &__button{
-    width: 5.5rem;
-    height: 5.5rem;
+    background: $color-dark;
+    width: 4.5rem;
+    height: 4.5rem;
     position: fixed;
     top: 2rem;
-    right: 2rem;
-    background-color: $color-white;
-    border-radius: 50%;
-    z-index: 200;box-shadow: 0 1rem 3rem rgba($color-dark, 0.2);
+    right: 3rem;
+    z-index: 200;
     text-align: center;
     }
 
 	&__background{
-	height: 5.5rem;
-    width: 5.5rem;
+	height: 3.5rem;
+    width: 3.5rem;
     border-radius: 50%;
     position: fixed;
     top: 2rem;
-    right: 2rem;
+    right: 3rem;
 	z-index: 100;
-    background-image: linear-gradient(to left, 
-	rgba($color-white, 0.7), 
-	rgba($color-grey, 0.7));
-	transition: transform .8s cubic-bezier(0.6, -0.28, 0.735, 0.045);;
-
-	//transform: scale(25);
+    background: radial-gradient($color-secondary, $color-main);
+    opacity: .5;
 	}
 
 	&__nav{
@@ -41,7 +36,8 @@
 
 	opacity: 0;
 	width: 0%;
-	transition: opacity .8s cubic-bezier(0.6, -0.28, 0.735, 0.045);;
+	transition: .25s ease;
+	//transition: opacity .8s cubic-bezier(0.6, -0.28, 0.735, 0.045);;
 	}
 
 	&__list{
@@ -80,7 +76,7 @@
 	}
 
 	&__checkbox:checked ~ &__background{
-    transform: scale(35);
+    transform: scale(60);
 	}
 
 	&__checkbox:checked ~ &__nav{
@@ -91,7 +87,6 @@
 	&__icon{
 
 	position: relative;
-	margin-top: 2.7rem;
 
 	&,
 	&::before,

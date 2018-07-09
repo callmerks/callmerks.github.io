@@ -19,6 +19,7 @@
 	background-image: linear-gradient(to right bottom, 
 	rgba($color-main, 0.9), 
 	rgba($color-secondary, 0.9));
+	background-attachment: fixed;
 	}
 	&--sub{
 	display: block;
